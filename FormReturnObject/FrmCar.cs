@@ -12,13 +12,18 @@ namespace FormReturnObject
 {
     public partial class FrmCar : Form
     {
+        #region private attributes
         private Car _car = new Car("Volvo", "V60");
+        #endregion private attributes
 
+        #region constructors
         public FrmCar()
         {
             InitializeComponent();
         }
+        #endregion constructors
 
+        #region private methodes
         private void FrmCar_Load(object sender, EventArgs e)
         {
             //initialisation des champs text
@@ -46,5 +51,6 @@ namespace FormReturnObject
             //on met à jour les données de la voiture
             setCarValue(this._car);
         }
+        #endregion private attributes
     }
 }
